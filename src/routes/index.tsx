@@ -43,7 +43,7 @@ export const Route = createFileRoute("/")({
 /* ------------------------------------------------------------------ */
 
 // Single place to change the company tagline (shown in the About section).
-const TAGLINE = "Building better tomorrows.";
+const TAGLINE = "Together, We Build Something Remarkable";
 
 const NAV_LINKS = [
   { label: "About", href: "#about" },
