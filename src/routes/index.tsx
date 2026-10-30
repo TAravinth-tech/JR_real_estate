@@ -434,7 +434,7 @@ function About() {
               </figure>
               <figure className="col-span-2 row-span-2 border border-primary/50 bg-navy p-1.5 shadow-xl">
                 <img
-                  src="/interior-wall-3.jpg"
+                  src="/Warm1.png"
                   alt="Fluted walnut panel beside a gold-veined wall with framed construction artwork and cove lighting"
                   loading="lazy"
                   decoding="async"
