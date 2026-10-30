@@ -425,7 +425,7 @@ function About() {
             <div className="grid grid-cols-5 gap-4">
               <figure className="col-span-5 border border-primary/50 bg-navy p-1.5 shadow-xl">
                 <img
-                  src="/interior-wall-1.jpg"
+                  src="/Warm1.png"
                   alt="Executive cabin feature wall: black wallpaper with gold veining, walnut panelling and gold-framed signage"
                   loading="lazy"
                   decoding="async"
@@ -434,7 +434,7 @@ function About() {
               </figure>
               <figure className="col-span-2 row-span-2 border border-primary/50 bg-navy p-1.5 shadow-xl">
                 <img
-                  src="/Warm1.png"
+                  src="/interior-wall-3.jpg"
                   alt="Fluted walnut panel beside a gold-veined wall with framed construction artwork and cove lighting"
                   loading="lazy"
                   decoding="async"
