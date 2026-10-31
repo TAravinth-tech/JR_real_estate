@@ -1,6 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useEffect, useState, type FormEvent } from "react";
-const jrcplLogo = "/jrcpl-logo.png";
+const jrcplLogo = "/jrcpl-logo.jpeg";
 const jrcplHero = "/big_image.jpg";
 const jrcplMd = "/jrcpl-md.jpg";
 const clientMorth = "/client-morth.jpg";
