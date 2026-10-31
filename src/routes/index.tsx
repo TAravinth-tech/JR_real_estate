@@ -180,6 +180,24 @@ function Index() {
 }
 
 /* ------------------------------------------------------------------ */
+/* Logo mark (shared by header + footer)                               */
+/* ------------------------------------------------------------------ */
+
+function LogoMark({ className = "h-14 w-14" }: { className?: string }) {
+  return (
+    <span
+      className={`relative inline-flex shrink-0 items-center justify-center rounded-full bg-black p-[3px] ring-1 ring-primary/80 shadow-[0_0_0_4px_rgba(212,175,55,0.12),0_6px_18px_rgba(0,0,0,0.5)] transition-all duration-300 ${className}`}
+    >
+      <img
+        src={jrcplLogo}
+        alt="JRCPL logo"
+        className="h-full w-full scale-[1.03] rounded-full object-cover"
+      />
+    </span>
+  );
+}
+
+/* ------------------------------------------------------------------ */
 /* Header                                                              */
 /* ------------------------------------------------------------------ */
 
@@ -203,15 +221,14 @@ function SiteHeader() {
       }`}
     >
       <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
-        <a href="#top" className="flex items-center gap-3">
-          <img
-            src={jrcplLogo}
-            alt="JRCPL logo"
-            className="h-12 w-12 rounded-full bg-white/90 p-0.5"
-          />
+        <a href="#top" className="flex items-center gap-4">
+          <LogoMark className={scrolled ? "h-12 w-12" : "h-14 w-14"} />
+          <span className="hidden h-9 w-px bg-primary/50 sm:block" aria-hidden />
           <span className="leading-tight">
-            <span className="block font-display text-lg font-bold text-white">JR Consultancy</span>
-            <span className="block text-[0.65rem] uppercase tracking-[0.3em] text-white/70">
+            <span className="block font-display text-xl font-bold tracking-wide text-white">
+              JR Consultancy
+            </span>
+            <span className="mt-0.5 block text-[0.62rem] font-semibold uppercase tracking-[0.32em] text-primary">
               Services Pvt. Ltd.
             </span>
           </span>
@@ -681,8 +698,6 @@ function Contact() {
               head office in Madurai. Reach us directly, or send an enquiry below.
             </p>
 
-            
-
             <dl className="mt-10 space-y-8">
               <div>
                 <dt className="eyebrow text-muted-foreground">Head Office</dt>
@@ -795,17 +810,16 @@ function SiteFooter() {
   return (
     <footer className="border-t-2 border-primary bg-navy py-14 text-white/70">
       <div className="mx-auto flex max-w-7xl flex-col items-center gap-8 px-4 text-center sm:px-6 lg:flex-row lg:justify-between lg:text-left lg:px-8">
-        <div className="flex flex-col items-center gap-3 lg:flex-row lg:gap-4">
-          <img
-            src={jrcplLogo}
-            alt="JRCPL logo"
-            className="h-12 w-12 rounded-full bg-white/90 p-0.5"
-          />
+        <div className="flex flex-col items-center gap-4 lg:flex-row lg:gap-5">
+          <LogoMark className="h-16 w-16" />
+          <span className="hidden h-10 w-px bg-primary/40 lg:block" aria-hidden />
           <div>
-            <p className="font-display text-base font-bold text-white">
+            <p className="font-display text-lg font-bold text-white">
               JR Consultancy Services Pvt. Ltd.
             </p>
-            <p className="text-xs">Madurai · Chennai · Site offices across India</p>
+            <p className="mt-1 text-xs uppercase tracking-[0.2em] text-primary/80">
+              Madurai · Chennai · Site offices across India
+            </p>
           </div>
         </div>
         <nav className="flex flex-wrap justify-center gap-6">
